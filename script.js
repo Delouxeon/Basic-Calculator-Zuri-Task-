@@ -1,21 +1,24 @@
-let firstNumber = parsefloat(window.prompt("Enter the First Number"));
+var firstNumber = window.prompt("Enter the First Number");
 while (isNaN(firstNumber)){
-     alert("Error in Input! Ensure that you enter a number");
-     firstNumber = prompt("Enter the First Number");
-}
-
-let operator = parsefloat(window.prompt("Enter your choiced operator\n e.g +,-,*,/ : "));
-
-let secondNumber = window.prompt("Enter the Second Number\n");
-while (isNaN(secondNumber)){
      alert("Error in Input! Ensure that you enter a number");
      firstNumber = window.prompt("Enter the First Number");
 }
 
-let result = undefined
+let operator = window.prompt("Enter your choiced operator\n e.g +,-,*,/ : ");
+
+var secondNumber = window.prompt("Enter the Second Number\n");
+while (isNaN(secondNumber)){
+     alert("Error in Input! Ensure that you enter a number");
+     secondNumber = window.prompt("Enter the Second Number\n");
+}
+
+firstNumber = parseFloat(firstNumber)
+secondNumber = parseFloat(secondNumber)
+
+var result 
 
 if (operator =="+"){
-    result = firstNumber + secondNumber;
+     result = firstNumber + secondNumber;
 }
 
 else if (operator =="-"){
@@ -23,11 +26,11 @@ else if (operator =="-"){
 }
 
 else if (operator =="*"){
-    result = firstNumber * secondNumber;
+     result = firstNumber * secondNumber;
 }
 
 else if (operator =="/"){
-    result = firstNumber / secondNumber;
+     result = firstNumber / secondNumber;
 }
 
-alert(firstNumber, operator, secondNumber, "=", result)
+alert(String(firstNumber) + " " + operator + " " + String(secondNumber) + " " + "=" + " " + String(result) )
