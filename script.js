@@ -4,7 +4,7 @@ while (isNaN(firstNumber)){
      firstNumber = window.prompt("Enter the First Number");
 }
 
-let operator = window.prompt("Enter your choiced operator\n e.g +,-,*,/ : ");
+let operator = window.prompt("Enter your choiced operator\n e.g +,-,*,/ ");
 
 var secondNumber = window.prompt("Enter the Second Number\n");
 while (isNaN(secondNumber)){
